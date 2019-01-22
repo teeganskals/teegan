@@ -1,0 +1,398 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+/** header **/
+
+header {
+    display: flex;
+    margin: 40px 20px;
+}
+
+
+.logo {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu {
+    margin-left: auto;
+}
+
+.menu__item {
+    margin-left: 40px;
+    font-family: rubik;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #868686;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    color: #c2c2c2;
+}
+
+.menu__item--active,
+.menu__item--active:hover {
+    color: black;
+}
+
+
+@media (max-width: 767px) {
+    
+    .menu {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        z-index: 100;
+    }
+    
+    .menu__item {
+        margin-left: 0;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    
+    .menu__item:hover {
+    color: #c2c2c2;
+}
+
+.menu__item--active,
+.menu__item--active:hover {
+    color: white;
+}
+    
+    .menu-active .menu {
+        display: flex;
+    }
+    
+    .menu-toggle {
+        background: url(../images/menu-toggle.svg) center no-repeat;
+        position: absolute;
+        top: 35px;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+        z-index: 200;
+    }
+    
+    .menu-active .menu-toggle {
+        background: url(../images/close.svg) center no-repeat;
+        background-color: black;
+    }
+}
+
+
+
+
+
+/** project listing **/
+
+.project-listing {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-listing__item {
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.project-listing__item:first-child {
+    margin-top: 0;
+}
+
+.project-listing__item__image {
+    width: 100%;
+}
+
+.project-listing__item__image img{
+    width: 100%;
+}
+
+.project-details {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(240,240,240,1);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.project-listing__item:hover .project-details {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/**Inner Pages**/
+
+.section {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.details {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.details__title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.details__description {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin: auto;
+    text-align: center;   
+    margin-bottom: 100px;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.col-1__item img {
+    width: 100%;
+}
+
+
+.col-1__item {
+    margin-top: 10px;
+}
+
+.col-1__mobile {
+    margin-top: 100px;
+}
+
+.col-1__narrow img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+col-1__wide img {
+    width: 100%;
+}
+
+.col-2   {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.col-2__item {
+    margin-top: 10px;
+}
+
+.col-2__item:first-child{
+    margin-right: 0px;
+}
+
+.col-2__item img {
+    width: 100%;
+}
+
+
+
+
+/**contact**/
+
+.teegan-image img {
+    width: 100%;
+}
+
+.teegan {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.teegan-image {
+    width: 50%;
+    max-width: 200px;
+    flex-shrink: 0;
+}
+
+.teegan-description__title {
+    font-family: rubik;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.teegan-description__details {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.teegan-description__links {
+    margin-bottom: 50px;
+}
+
+.teegan-description__line {
+    border-top: solid 2px black;
+    width: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/**desktop media queries**/
+
+@media (min-width: 768px) {
+    
+    .wrapper {
+        margin-bottom: 100px;
+    }
+    
+    header {
+    display: flex;
+    margin: 100px 0;
+    }
+    
+    
+
+ /**INNER PAGES**/    
+    
+    .col-2   {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+    
+    .col-2__item {
+        margin-top: 0px;
+    }
+    
+    .col-2__item:first-child{
+        margin-right: 10px;
+    }
+    
+    .details {
+        padding: 0;
+    }
+    
+    .details__description {
+        width: 700px;
+    }
+    
+
+    
+/**OUTER PAGES**/   
+    
+    .project-listing__item {
+        width: calc(50% - 5px);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project-listing__item:nth-child(2n) {
+    margin-left: auto;
+    }
+
+    .project-listing__item:nth-child(-n + 2) {
+    margin-top: auto;
+    }
+    
+    
+/**CONTACT**/    
+    
+    .teegan {
+        flex-direction: row;
+    }
+    
+    .teegan-image {
+        width: 362px;
+        margin-left: 50px;
+        max-width: none;
+    }
+    
+    .teegan-description__title {
+        margin-top: 120px;
+    }
+    
+    .teegan-description {
+        margin-left: 50px;
+        padding: 0;
+    }
+}
