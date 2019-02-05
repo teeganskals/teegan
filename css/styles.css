@@ -37,9 +37,9 @@ header {
 
 .logo {
     font-family: 'Rubik', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: inherit;
     text-decoration: none;
@@ -67,6 +67,7 @@ header {
 .menu__item--active,
 .menu__item--active:hover {
     color: black;
+    font-weight: bold;
 }
 
 
@@ -88,7 +89,7 @@ header {
     
     .menu__item {
         margin-left: 0;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 50px;
     }
     
@@ -323,12 +324,19 @@ col-1__wide img {
     
     .wrapper {
         margin-bottom: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     header {
     display: flex;
     margin: 100px 0;
     }
+    
+    .logo {
+    font-size: 18px;
+    letter-spacing: 4px;
+}
     
     
 
