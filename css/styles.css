@@ -135,7 +135,7 @@ header {
 
 .project-listing__item {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 9px;
     position: relative;
 }
 
@@ -367,18 +367,17 @@ col-1__wide img {
 
     
 /**OUTER PAGES**/   
+    .project-listing {
+        justify-content: space-between;
+    }
     
     .project-listing__item {
-        width: calc(50% - 5px);
+        width: calc(33.3333% - 7px);
         display: flex;
         flex-direction: column;
     }
-    
-    .project-listing__item:nth-child(2n) {
-    margin-left: auto;
-    }
 
-    .project-listing__item:nth-child(-n + 2) {
+    .project-listing__item:nth-child(-n + 3) {
     margin-top: auto;
     }
     
