@@ -196,7 +196,7 @@ header {
 
 .details__title {
     font-family: 'Rubik', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -207,7 +207,7 @@ header {
 
 .details__description {
     font-family: 'Rubik', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100;
     letter-spacing: 1px;
     line-height: 30px;
